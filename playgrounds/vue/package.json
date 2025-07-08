@@ -1,0 +1,21 @@
+{
+  "name": "@playcode/playground-vue",
+  "type": "module",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "vite",
+    "build": "vue-tsc -b && vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "vue": "catalog:"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-vue": "catalog:",
+    "@vue/tsconfig": "^0.7.0",
+    "typescript": "catalog:",
+    "vite": "catalog:",
+    "vue-tsc": "^2.2.12"
+  }
+}

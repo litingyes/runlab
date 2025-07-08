@@ -1,0 +1,64 @@
+{
+  "name": "@litingyes/monorepo-starter",
+  "type": "module",
+  "version": "0.0.7",
+  "private": true,
+  "packageManager": "pnpm@10.5.2+sha512.da9dc28cd3ff40d0592188235ab25d3202add8a207afbedc682220e4a0029ffbff4562102b9e6e46b4e3f9e8bd53e6d05de48544b0c57d4b0179e22c76d1199b",
+  "description": "A typescript project startup template",
+  "author": "litingyes <luz.liting@gmail.com> (https://litingyes.top/)",
+  "license": "MIT",
+  "homepage": "https://github.com/litingyes/monorepo-starter#readme",
+  "bugs": {
+    "url": "https://github.com/litingyes/monorepo-starter/issues"
+  },
+  "keywords": [
+    "typescript",
+    "template",
+    "starter",
+    "vite"
+  ],
+  "scripts": {
+    "lint": "eslint .",
+    "format": "eslint --fix .",
+    "build": "pnpm -r build",
+    "commit": "git-cz",
+    "prerelease": "pnpm build",
+    "release": "bumpp",
+    "changelogen": "changelogen -r $npm_package_version --output",
+    "prepare": "husky"
+  },
+  "devDependencies": {
+    "@antfu/eslint-config": "^4.16.2",
+    "@commitlint/cli": "^19.6.1",
+    "@commitlint/config-conventional": "^19.6.0",
+    "@commitlint/cz-commitlint": "^19.6.1",
+    "@types/node": "22",
+    "bumpp": "^10.2.0",
+    "changelogen": "^0.6.2",
+    "commitizen": "^4.3.1",
+    "eslint": "^9.18.0",
+    "eslint-plugin-format": "^1.0.1",
+    "husky": "^9.1.7",
+    "inquirer": "^12.3.3",
+    "lint-staged": "^16.1.2",
+    "typescript": "catalog:"
+  },
+  "config": {
+    "commitizen": {
+      "path": "@commitlint/cz-commitlint"
+    }
+  },
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "pnpm": {
+    "onlyBuiltDependencies": [
+      "esbuild"
+    ]
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}

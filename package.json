@@ -1,5 +1,5 @@
 {
-  "name": "playcode",
+  "name": "runlab",
   "type": "module",
   "version": "0.0.7",
   "private": true,
@@ -7,12 +7,12 @@
   "description": "A code playground for the web",
   "author": "litingyes <luz.liting@gmail.com> (https://litingyes.top/)",
   "license": "MIT",
-  "homepage": "https://github.com/litingyes/playcode#readme",
+  "homepage": "https://github.com/litingyes/runlab#readme",
   "bugs": {
-    "url": "https://github.com/litingyes/playcode/issues"
+    "url": "https://github.com/litingyes/runlab/issues"
   },
   "keywords": [
-    "playcode",
+    "runlab",
     "playground",
     "code",
     "play"

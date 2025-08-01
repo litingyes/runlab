@@ -8,4 +8,4 @@ catalog:
   unplugin-external: ^0.1.0-beta.3
   vite: ^7.0.3
   vite-plugin-dts: ^4.5.0
-  vue: ^3.5.17
+  vue: ^3.5.18
